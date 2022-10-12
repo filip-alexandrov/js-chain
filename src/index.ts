@@ -1,18 +1,13 @@
-import Wallet from "./wallet/initWallet";
+import Wallet from "./wallet/wallet";
 
 let wallet = new Wallet();
 
 
-// generate 100 word string
-let randomString = "";
-for (let i = 0; i < 100; i++) {
-    randomString += Math.random().toString(36).substring(2);
-}
+let toEncrypt = {"random string" : "hello world"}; 
 
-let encryptedMessage = wallet.encryptMessage(randomString);
+let encryptedMessage = wallet.encryptMessage(toEncrypt);
 
-console.log("Encrypted message: " + encryptedMessage);
 
-let resp = wallet.validateMessageFromAddress(wallet.publicKey, encryptedMessage, randomString);
+let resp = wallet.validateMessageFromAddress(wallet.address, encryptedMessage, toEncrypt);
 
-console.log(resp);
+console.log(resp)
