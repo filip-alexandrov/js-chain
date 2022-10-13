@@ -1,5 +1,6 @@
 {
     "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJ6MHNlboK9MYcUeClcxkpnTp4l2motuvXRICfwLCjYooyv/BXjZlbCwmKhqaYkwch+Wi+k9hdsIetuvHWm9izsCAwEAAQ==": {
-        "nonce": "0"
-    }
+        "nonce": 0,
+        "balance": 0
+      }
 }

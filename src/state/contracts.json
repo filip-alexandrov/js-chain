@@ -1,0 +1,6 @@
+{
+  "[hash 256 of the code, if address is free]": {
+    "code": "[code]",
+    "memory_state": "[memory json]"
+  }
+}

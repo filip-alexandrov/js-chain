@@ -1,6 +1,7 @@
-import Wallet from "./wallet/wallet";
+import Validator from "./validator";
+import {wallet} from "./wallet/wallet";
 
-let wallet = new Wallet();
+let validator = new Validator(); 
 
 
 let toEncrypt = {"random string" : "hello world"}; 
@@ -8,6 +9,4 @@ let toEncrypt = {"random string" : "hello world"};
 let encryptedMessage = wallet.encryptMessage(toEncrypt);
 
 
-let resp = wallet.validateMessageFromAddress(wallet.address, encryptedMessage, toEncrypt);
-
-console.log(resp)
+wallet.sendTransaction("948203", 100);
